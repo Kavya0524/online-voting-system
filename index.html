@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Online Voting System</title>
+
+  <!-- Link to CSS file -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Online Voting System</h1>
+    
+    <div id="loginSection">
+      <input type="text" id="voterId" placeholder="Enter Voter ID" />
+      <button onclick="login()">Login</button>
+    </div>
+
+    <div id="voteSection" style="display:none;">
+      <h2>Welcome, Voter</h2>
+      <p>Select your candidate:</p>
+      <div class="candidates">
+        <button onclick="castVote('Candidate A')">Candidate A</button>
+        <button onclick="castVote('Candidate B')">Candidate B</button>
+        <button onclick="castVote('Candidate C')">Candidate C</button>
+      </div>
+    </div>
+
+    <div id="resultSection" style="display:none;">
+      <h2>Voting Result</h2>
+      <p id="resultText"></p>
+    </div>
+  </div>
+
+  <!-- Link to JavaScript file -->
+  <script src="script.js"></script>
+</body>
+</html>
